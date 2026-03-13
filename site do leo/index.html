@@ -15,7 +15,7 @@
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Estilos Personalizados -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-gradient-to-br from-black via-gray-900 to-black text-white antialiased relative overflow-x-hidden">
     <!-- Efeitos de Brilho no Fundo -->
@@ -38,7 +38,7 @@
                 <a href="#contato" class="hover:text-orange-500 transition-colors">Contato</a>
             </div>
             <!-- Botão menu mobile -->
-            <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+            <button id="menu-btn" aria-label="Abrir Menu" class="block md:hidden text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -184,7 +184,9 @@
                             
                             <!-- Imagem de Capa do Vídeo (Antes) -->
                             <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
-                                <img src="assets/img/antes_broken.png" alt="iPhone Quebrado - Techcel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2000ms]">
+                                <video autoplay loop muted playsinline class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2000ms]">
+                                    <source src="assets/video/reparo_iphone.mp4" type="video/mp4">
+                                </video>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
                                 
                                 <!-- Label Antes -->
@@ -544,7 +546,7 @@
     </main>
 
     <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/5527997413013" target="_blank" class="whatsapp-float bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center pulse-orange">
+    <a href="https://wa.me/5527997413013" target="_blank" aria-label="Falar no WhatsApp" class="whatsapp-float bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center pulse-orange">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>
     </a>
 
@@ -595,6 +597,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
